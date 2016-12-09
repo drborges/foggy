@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'foggy/version'
+require 'paperclip/storage/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "foggy"
-  spec.version       = Foggy::VERSION
+  spec.name          = "paperclip-foggy"
+  spec.version       = Paperclip::Storage::Foggy::VERSION
   spec.authors       = ["Diego Borges"]
   spec.email         = ["drborges.cic@gmail.com"]
 

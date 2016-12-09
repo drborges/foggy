@@ -4,6 +4,10 @@ describe Paperclip::Storage::Foggy do
   let(:avatar) { User.create(avatar_file_name: 'boat.jpg').avatar }
   let(:asset_url) { 'http://demo.cloudimg.io/s/resize/300/sample.li/boat.jpg' }
 
+  it "has a version number" do
+    expect(Paperclip::Storage::Foggy::VERSION).not_to be nil
+  end
+
   describe '#path' do
     before { allow(avatar).to receive(:short_expiring_url).with(:original).and_return(asset_url) }
 

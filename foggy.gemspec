@@ -11,17 +11,8 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Bring remote attachments closer to your app.}
   spec.description   = %q{Sometimes you need to abstract the fact remote attachments stored say in S3 aren't locally. Foggy can help you with that by creating a temp local file whenever you need to manipulate the remote asset.}
-  spec.homepage      = "https://github.com/drborges/foggy"
+  spec.homepage      = "https://drborges.github.io/foggy"
   spec.license       = "MIT"
-
-  # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
-  # to allow pushing to a single host or delete this section to allow pushing to any host.
-  if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "'http://mygemserver.com'"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against " \
-      "public gem pushes."
-  end
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})

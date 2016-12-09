@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Bring remote attachments closer to your app.}
   spec.description   = %q{Sometimes you need to abstract the fact remote attachments stored say in S3 aren't locally. Foggy can help you with that by creating a temp local file whenever you need to manipulate the remote asset.}
-  spec.homepage      = "https://drborges.github.io/foggy"
+  spec.homepage      = "https://drborges.github.io/paperclip-foggy"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
